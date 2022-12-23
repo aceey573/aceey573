@@ -1,0 +1,58 @@
+/********* utils *********/
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/********* main *********/
+.head {
+    background-color: #000;
+    /* background-image: url('./img/cat.jpg'); */
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+}
+
+.head-text {
+    text-align: center;
+    width: 450px;
+}
+
+.heading-1 {
+    font-size: 1.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img {
+    width: 50%;
+    height: 5px;
+}
+
+.head-button {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    bottom: 0;
+    transform: translateX(-50%);
+}
