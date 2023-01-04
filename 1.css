@@ -28,8 +28,8 @@
 }
 
 .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .img {
@@ -40,19 +40,72 @@
 .head-button {
     color: #fff;
     background-color: rgba(255, 255, 255, 0);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border: 1px solid;
     border-radius: 5px;
-    width: 100%;
+    width: fit-content;
 }
 
 .line {
-    display: block;
     position: absolute;
-    left: 50%;
-    width: 1px;
-    height: 50px;
-    background: #fff;
     bottom: 0;
-    transform: translateX(-50%);
+    border-left: 1px solid #fff;
+    height: 50px;
+}
+
+.article {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.article-thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.divider {
+    color: #ccc;
+    width: 8rem;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 2rem auto;
+}
+
+.divider-white {
+    color: #fff;
+}
+
+.features {
+    background-image: url(./img/cat.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.features .article {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.squares-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 1.3rem;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square p {
+    transform: rotate(-45deg);
 }
