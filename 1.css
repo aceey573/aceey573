@@ -76,36 +76,121 @@
     color: #fff;
 }
 
-.features {
+.features,
+.request {
     background-image: url(./img/cat.jpg);
     background-size: cover;
     color: #fff;
 }
 
-.features .article {
+.features .article,
+.request .article {
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .squares-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    max-width: 550px;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .square {
-    height: 60px;
-    width: 60px;
-    border-radius: 3px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #fff;
-    margin: 1.3rem;
-    transform: rotate(45deg);
+    border-radius: 3px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: rotate(45deg);
+    margin: 30px;
 }
 
 .square p {
     transform: rotate(-45deg);
 }
+
+.button {
+    min-width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background: none;
+    font-size: 1rem;
+    border: 0.5px solid #000;
+    text-transform: uppercase;
+}
+
+.article-preview h4 {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.article-preview p {
+    margin-bottom: 2rem;
+}
+
+.preview-content {
+    padding: 2rem 0;
+}
+
+.cta-button,
+.revert-button {
+    transition: all .25s ease-in-out;
+    min-width: 180px;
+    margin: 0 5px;
+}
+
+.cta-button {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.revert-button {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.revert-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+ul {
+    list-style: none;
+}
+
+.social-media,
+.info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.social-media {
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.info {
+    max-width: 300px;
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding: 5rem 1rem;
+}
+
+/* https://icomoon.io/app/#/select */
